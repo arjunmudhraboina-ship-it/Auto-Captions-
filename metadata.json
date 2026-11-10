@@ -1,0 +1,6 @@
+{
+  "name": "Caption AI",
+  "description": "AI-powered automatic multilingual video caption editor inspired by CapCut.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

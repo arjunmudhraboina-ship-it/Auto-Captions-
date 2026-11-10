@@ -1,0 +1,33 @@
+{
+  "entities": {
+    "UserProfile": {
+      "collection": "users",
+      "path": "users/{userId}",
+      "fields": {
+        "userId": { "type": "string", "required": true },
+        "email": { "type": "string", "required": true },
+        "displayName": { "type": "string", "required": true },
+        "isPremium": { "type": "boolean", "required": true },
+        "createdAt": { "type": "timestamp", "required": true },
+        "updatedAt": { "type": "timestamp", "required": true }
+      }
+    },
+    "Project": {
+      "collection": "projects",
+      "path": "users/{userId}/projects/{projectId}",
+      "fields": {
+        "id": { "type": "string", "required": false },
+        "userId": { "type": "string", "required": true },
+        "title": { "type": "string", "required": true },
+        "durationMs": { "type": "number", "required": true },
+        "aspectRatio": { "type": "string", "required": true },
+        "spokenLanguage": { "type": "string", "required": true },
+        "translationLanguage": { "type": "string", "required": false },
+        "captionsJson": { "type": "string", "required": true },
+        "styleJson": { "type": "string", "required": true },
+        "createdAt": { "type": "timestamp", "required": true },
+        "updatedAt": { "type": "timestamp", "required": true }
+      }
+    }
+  }
+}
